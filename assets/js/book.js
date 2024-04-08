@@ -10,18 +10,22 @@
 /* JavaScript CODE ************************************************************************* */
 /* ***************************************************************************************** */
 //Book name search
-//`https://openlibrary.org/search.json?q=${bookName}&fields=*,availability&limit=1`
+//`https://openlibrary.org/search.json?q=${bookName}&fields=*,availability&limit=1` OR
+//`https://openlibrary.org/search.json?q=${bookName}&mode=everything`
 
-//Author
-//`https://openlibrary.org/authors/${bookData.docs[0].author_key[0]}.json`.
+//Author ${author_key}
+//`https://openlibrary.org/authors/${author_key}.json`
+//`https://openlibrary.org/authors/OL22242A.json`
 
 //Author photos
 //`https://covers.openlibrary.org/a/id/6377428-M.jpg`
 
-//Authors work
+//Authors work ${author_key}
+//https://openlibrary.org/authors/${author_key}/works.json
 //https://openlibrary.org/authors/OL22242A/works.json
 
-//National Literature
+//National Literature ${subject_key[num]}
+//`https://openlibrary.org/subjects/classic_literature.json`
 //`https://openlibrary.org/subjects/russian_literature.json`
 //`https://openlibrary.org/subjects/english_literature.json`
 
@@ -92,7 +96,7 @@ First sentence: ${bookData.docs[0].first_sentence[10]}`);
 		}
 	});
 }
-testGetBookDetails("crime and punishment");
+testGetBookDetails("sonnets");
 //----------------------------------------------
 const displayMessage = document.querySelector("#loadingMessage");
 const messageParagraph = document.createElement("p");
