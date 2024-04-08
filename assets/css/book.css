@@ -1,0 +1,558 @@
+@charset "utf-8";
+/* CSS Document */
+/* =============================================================
+ 	First Name		  : Strahinja     					    
+ 	Last Name		    : Popovic					            
+ 	Developer Name  : codeXdeveloper			        
+ 	WebMaster Email	: spope.mails@gmail.com               
+ ============================================================== */
+
+/* ***************************************************************************************** */
+/* Definition of the css stylingn variables ************************************************ */
+/* ***************************************************************************************** */
+
+:root {
+  --aqua: aqua;
+  --dark: black;
+  --light: white; 
+  --success: rgb(3, 102, 3);
+  --error: rgb(170, 28, 28);
+  --gray: rgb(240, 240, 240);
+  --gray-dark: rgb(23,23,23);
+  --naval-blue: rgba(1,33,55,1.00);
+  --electron-blue: rgb(50, 164, 240);
+  --custom-gray: rgb(175, 191, 207);
+  --light-web-blue: rgb(12, 209, 235);
+}
+
+body {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 24px;
+  min-width: 600px;
+  background-color: var(--light);
+  font-family: "Roboto", sans-serif;
+}
+
+div#format {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 40px auto 0 auto;
+  background-color: var(--gray);
+  border: 3px solid var(--naval-blue);
+}
+
+div#header {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+div#header section#header-main {
+  width: 100%;
+  line-height: 3;
+  margin: 0 auto;
+  font-size: 85px;
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  color: var(--naval-blue);
+  font-family: "Roboto", sans-serif;
+}
+
+div#header section#header-main span {
+  color: var(--electron-blue);
+}
+
+div#top {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gray);
+}
+
+div#top section#input-book {
+  height: auto;
+  margin: auto auto;
+  background-color: var(--gray);
+}
+
+div#top section#current-book {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+div#top section#current-book section#sub-section {
+  height: auto;
+  display: flex;
+  margin:0 auto;
+  border-radius: 5px;
+  flex-direction: column;
+  border: 0px solid var(--gray-dark);
+}
+
+div#top section#current-book section#sub-section section#sub-sub,
+div#top section#current-book section#sub-section section#sub-sub-2 {
+  width: 80%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  visibility: hidden;
+}
+
+div#top section#current-book section#sub-section section#sub-sub {
+  margin-top: 20px;  
+  border-radius: 5px;
+  flex-direction: row;
+  border: 1px solid var(--gray-dark);
+  background-color: var(--custom-gray);
+}
+
+div#top section#current-book section#sub-section section#sub-sub-2 {
+  padding: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid var(--gray-dark);
+  background-color: var(--custom-gray);
+}
+
+div#top section#current-book section#sub-section section#sub-sub-2 div#author-img {
+  width: 150px;
+}
+
+div#top section#current-book section#sub-section section#sub-sub-2 div#author-img img {
+  width: 150px;
+  border-radius: 5px;
+  margin: 20px 0 20px 0;
+  border: 1px solid var(--gray-dark);
+}
+
+div#top section#current-book section#sub-section section#sub-sub-2 div#author-current {
+  width: calc(100% - 150px);
+}
+
+div#top section#current-book section#sub-section section#sub-sub-2 div#author-current p {
+  line-height: 1.5;
+  color: var(--dark);
+  font-size: x-large;
+  font-weight: bolder;
+  margin: 20px 0 20px 0;
+  font-family: "Roboto", sans-serif;
+}
+
+div#top section#current-book section#sub-section section#sub-sub-2 div#author-current p:first-child {
+  font-size: 40px;
+}
+
+div#top section#current-book section#sub-section section#sub-sub-2 div#author-bio {
+  width: 100%;
+}
+
+div#top section#current-book section#sub-section section#sub-sub-2 div#author-bio p {
+  text-align: left;
+  font-size: x-large;
+  color: var(--dark);
+  letter-spacing: 0px;
+  padding-bottom: 20px;
+  white-space: pre-line;
+  word-wrap: break-word;
+  font-family: "Roboto", sans-serif;
+}
+
+div#top section#current-book section#sub-section section#sub-sub div#book-cover {
+  padding: 20px 0 20px 20px;
+}
+
+div#top section#current-book section#sub-section section#sub-sub div#book-cover img
+{
+  margin: 0;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid var(--gray-dark);
+}
+
+div#top section#current-book section#sub-section section#sub-sub div#book-current {
+  margin: auto 0;
+}
+
+div#top section#current-book section#sub-section section#sub-sub div#book-current p {
+  color: var(--dark);
+  font-size: x-large;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+div#top section#current-book section#sub-section section#sub-sub div#book-current p:nth-child(2),
+div#top section#current-book section#sub-section section#sub-sub div#book-current p:nth-child(3),
+div#top section#current-book section#sub-section section#sub-sub div#book-current p:nth-child(4),
+div#top section#current-book section#sub-section section#sub-sub div#book-current p:nth-child(5),
+div#top section#current-book section#sub-section section#sub-sub div#book-current p:nth-child(6) {
+  padding-top: 10px;
+}
+
+div#top section#current-book section#sub-section section#sub-sub div#book-current p:first-child {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+div#top section#current-book section#sub-section section#sub-sub div#book-current p:nth-child(2) {
+  font-size: x-large;
+}
+
+div#top section#current-book section#sub-section section#sub-sub div#book-current p:nth-child(3),
+div#top section#current-book section#sub-section section#sub-sub div#book-current p:nth-child(4), 
+div#top section#current-book section#sub-section section#sub-sub div#book-current p:nth-child(5), 
+div#top section#current-book section#sub-section section#sub-sub div#book-current p:nth-child(6) {
+  font-size: x-large;
+}
+
+div#top section#current-book section#sub-section section#sub-sub div#book-current p:nth-child(5) {
+  font-weight: bold;
+}
+
+div#top section#current-book section#sub-section section#sub-sub div#book-current p:nth-child(6) {
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+
+div#middle {
+  width: 80%;
+  height: auto;
+  display: none;
+  margin: auto auto;
+  background-color: var(--gray);
+}
+
+div#middle section#book-list {
+  width: 100%;
+  height: auto;
+  display: flex;
+  border-radius: 5px;
+  border-radius: 10px;
+  flex-direction: column;
+  background-color: var(--gray);
+  border: 0px solid var(--gray-dark);
+}
+
+div#middle section#book-list section#book-2,
+div#middle section#book-list section#book-3,
+div#middle section#book-list section#book-4,
+div#middle section#book-list section#book-5,
+div#middle section#book-list section#book-6,
+div#middle section#book-list section#book-7,
+div#middle section#book-list section#book-8,
+div#middle section#book-list section#book-9,
+div#middle section#book-list section#book-10,
+div#middle section#book-list section#book-11,
+div#middle section#book-list section#book-12 {
+  margin-top: 20px;
+}
+
+div#middle section#book-list section#book-1,
+div#middle section#book-list section#book-2,
+div#middle section#book-list section#book-3,
+div#middle section#book-list section#book-4,
+div#middle section#book-list section#book-5,
+div#middle section#book-list section#book-6,
+div#middle section#book-list section#book-7,
+div#middle section#book-list section#book-8,
+div#middle section#book-list section#book-9,
+div#middle section#book-list section#book-10,
+div#middle section#book-list section#book-11,
+div#middle section#book-list section#book-12 {
+  width: 100%;
+  display: flex;
+  height: auto;
+  font-size: medium;
+  border-radius: 10px;
+  flex-direction: row; 
+  color: var(--naval-blue);
+  font-family: "Roboto", sans-serif;
+  border: 1px solid var(--naval-blue);
+  background-color: var(--custom-gray);
+}
+
+div#book-1-desc,
+div#book-2-desc,
+div#book-3-desc,
+div#book-4-desc,
+div#book-5-desc,
+div#book-6-desc,
+div#book-7-desc,
+div#book-8-desc,
+div#book-9-desc,
+div#book-10-desc,
+div#book-11-desc,
+div#book-12-desc {
+  margin: auto 0; 
+  text-align: left;
+  white-space: pre-line; 
+  border: 0px solid green;
+}
+
+div#book-1-desc p:first-child,
+div#book-2-desc p:first-child,
+div#book-3-desc p:first-child,
+div#book-4-desc p:first-child,
+div#book-5-desc p:first-child,
+div#book-6-desc p:first-child,
+div#book-7-desc p:first-child,
+div#book-8-desc p:first-child,
+div#book-9-desc p:first-child,
+div#book-10-desc p:first-child,
+div#book-11-desc p:first-child,
+div#book-12-desc p:first-child {
+  line-height: 1;
+  font-weight: bold;
+  font-size: x-large;
+  color: var(--dark);  
+  font-family: "Roboto", sans-serif;
+}
+
+div#book-1-desc p:nth-child(2),
+div#book-2-desc p:nth-child(2),
+div#book-3-desc p:nth-child(2),
+div#book-4-desc p:nth-child(2),
+div#book-5-desc p:nth-child(2),
+div#book-6-desc p:nth-child(2),
+div#book-7-desc p:nth-child(2),
+div#book-8-desc p:nth-child(2),
+div#book-9-desc p:nth-child(2),
+div#book-10-desc p:nth-child(2),
+div#book-11-desc p:nth-child(2),
+div#book-12-desc p:nth-child(2) {
+  line-height: 1;
+  font-size: x-large;
+  color: var(--dark); 
+  font-family: "Roboto", sans-serif;
+}
+
+div#book-1-desc p:nth-child(3),
+div#book-2-desc p:nth-child(3),
+div#book-3-desc p:nth-child(3),
+div#book-4-desc p:nth-child(3),
+div#book-5-desc p:nth-child(3),
+div#book-6-desc p:nth-child(3),
+div#book-7-desc p:nth-child(3),
+div#book-8-desc p:nth-child(3),
+div#book-9-desc p:nth-child(3),
+div#book-10-desc p:nth-child(3),
+div#book-11-desc p:nth-child(3),
+div#book-12-desc p:nth-child(3),
+div#book-1-desc p:nth-child(4),
+div#book-2-desc p:nth-child(4),
+div#book-3-desc p:nth-child(4),
+div#book-4-desc p:nth-child(4),
+div#book-5-desc p:nth-child(4),
+div#book-6-desc p:nth-child(4),
+div#book-7-desc p:nth-child(4),
+div#book-8-desc p:nth-child(4),
+div#book-9-desc p:nth-child(4),
+div#book-10-desc p:nth-child(4),
+div#book-11-desc p:nth-child(4),
+div#book-12-desc p:nth-child(4) {
+  line-height: 1;
+  font-size: large;
+  color: var(--dark); 
+  font-family: "Roboto", sans-serif;
+} 
+
+div#book-1-desc p,
+div#book-2-desc p,
+div#book-3-desc p,
+div#book-4-desc p,
+div#book-5-desc p,
+div#book-6-desc p,
+div#book-7-desc p,
+div#book-8-desc p,
+div#book-9-desc p,
+div#book-10-desc p,
+div#book-11-desc p,
+div#book-12-desc p {
+  font-size: large;
+  line-height: 1.5; 
+  padding-top: 20px;
+  color: var(--dark);
+  font-family: "Roboto", sans-serif;
+}
+
+div#book-1-cover,
+div#book-2-cover,
+div#book-3-cover,
+div#book-4-cover,
+div#book-5-cover,
+div#book-6-cover,
+div#book-7-cover,
+div#book-8-cover,
+div#book-9-cover,
+div#book-10-cover,
+div#book-11-cover,
+div#book-12-cover
+ {
+  margin: 20px;
+  cursor: pointer;
+  border: 0px solid green;
+}
+
+div#book-1-cover img,
+div#book-2-cover img,
+div#book-3-cover img,
+div#book-4-cover img,
+div#book-5-cover img,
+div#book-6-cover img,
+div#book-7-cover img,
+div#book-8-cover img,
+div#book-9-cover img,
+div#book-10-cover img,
+div#book-11-cover img,
+div#book-12-cover img
+ {
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
+  border: 0px solid var(--gray-dark);
+}
+
+label {
+  font-size: 30px;
+  margin: 0 0 0 10%;
+  font-weight: bolder;
+  color: var(--naval-blue);
+  font-family: "Roboto", sans-serif;
+}
+
+input[type=text] {
+  width: 80%;
+  height: 70px;
+  margin: 0 15px;
+  font-size: 30px;
+  border-radius: 5px;
+  margin: 10px 10% 10px 10%;
+  padding: 5px 5px 5px 5px;
+  font-family: "Roboto", sans-serif;
+  border: 2px solid var(--gray-dark);
+}
+
+input::placeholder {
+  font-size: 30px;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+}
+
+button#submit, button#clear {
+  width: 80%;
+  height: 75px;
+  font-size: 35px;
+  border-radius: 10px;
+  font-weight: bolder;
+  margin: 0 10% 15px 10%;
+  color: var(--naval-blue);
+  background-color: var(--gray);
+  font-family: "Roboto", sans-serif;
+  border: 2px solid var(--gray-dark);
+}
+
+button#submit {
+  margin-top: 10px;
+}
+
+span#shevron {
+  font-family: 'furore', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button#submit:hover, button#clear:hover {
+  color: var(--naval-blue);
+  border: 3px solid var(--naval-blue);
+}
+
+div#error-message,
+div#loadingMessage {
+  margin-left: 10%;
+  line-height: 1.5;
+}
+
+div#error-storage-empty {
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+div#error-message p,
+div#error-storage-empty p {
+  font-size: 25px; 
+  font-weight: bold; 
+  color: var(--error); 
+  font-family: "Roboto", sans-serif;
+}
+
+div#loadingMessage p {
+  font-size: x-large; 
+  font-weight: bold; 
+  color: var(--success); 
+  font-family: "Roboto", sans-serif;
+}
+
+div#error-storage-empty p {
+  margin-bottom: 20px;
+}
+
+footer#bottom {
+  width: 100%;
+  height: 350px;
+  margin: 0 auto;
+  line-height: 2;
+  text-align: left;
+  background-color: var(--light);
+  font-family: "Roboto", sans-serif;
+}
+
+footer#bottom p span {
+  color: var(--electron-blue);
+}
+
+footer#bottom p {
+  font-size: 18px;
+  text-align: left;
+  font-weight: bold;
+  color: var(--naval-blue);
+}
+
+footer#bottom p:first-child {
+  font-size: 70px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+@media only screen and (max-width: 1500px) {
+  div#top section#current-book section#sub-section {
+    flex-direction: column;
+  }
+
+  div#top section#current-book section#sub-section section#sub-sub {
+    flex-direction: column;
+  }
+
+  div#top section#current-book section#sub-section section#sub-sub div#book-cover {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 2500px) {
+  div#header section#header-main {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+  div#header section#header-main {
+    font-size: 60px;
+  }
+}
+
