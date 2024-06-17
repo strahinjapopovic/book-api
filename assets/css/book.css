@@ -507,7 +507,7 @@ footer#bottom {
   width: 100%;
   height: 350px;
   margin: 0 auto;
-  line-height: 2;
+  line-height: 1.2;
   text-align: left;
   background-color: var(--light);
   font-family: "Roboto", sans-serif;
