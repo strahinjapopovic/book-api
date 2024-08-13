@@ -1,6 +1,6 @@
 # Blog-API
 
-## OpenLibrary-API application created by codeXdeveloper
+## OpenLibrary-API application created by codexdev
 
 ## Description
 
